@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Student 1: Navbar will go here -->
+
+<!-- Navbar -->
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="#">V-CORE</a>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#team">Team</a></li>
+    </ul>
+  </nav>
+</header>
+  
+  <!-- Student 2: Hero Section will go here -->
+   
+  <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Our Team</h2>
+            <div class="about-content">
+                <div class="mission">
+                    <h3>Our Mission</h3>
+                    <p>To build clean, functional, and beautiful web experiences while mastering our collaborative development and Git branching skills.</p>
+                </div>
+                <div class="history">
+                    <h3>Team History</h3>
+                    <p>Formed for the Team Portfolio Git Workshop, we are a group of passionate developers learning how to build scalable projects together and resolve merge conflicts like pros.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer-section">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">Twitter</a>
+            </div>
+            <p>&copy; 2026 Team Portfolio Workshop. All rights reserved.</p>
+        </div>
+    </footer>
+  <!-- Student 3: Team Members will go here -->
+  
+<!-- Team Members Section -->
+<section id="team" class="team-section">
+  <div class="container">
+    <h2>Meet Our Team</h2>
+    <p class="team-subtitle">
+      Passionate developers collaborating through Git and teamwork.
+    </p>
+
+    <div class="team-grid">
+
+      <!-- Member 1 -->
+      <div class="team-card">
+        <div class="team-image">T</div>
+        <h3>Turkan</h3>
+        <p>Designed and structured the Hero Section with responsive layout and CTA elements.</p>
+      </div>
+
+      <!-- Member 2 -->
+      <div class="team-card">
+        <div class="team-image">F</div>
+        <h3>Ferid</h3>
+        <p>Implemented project cards and organized the Projects section content.</p>
+      </div>
+
+      <!-- Member 3 -->
+      <div class="team-card">
+        <div class="team-image">C</div>
+        <h3>Celal</h3>
+        <p>Built the navigation bar and managed Git branch integration workflow.</p>
+      </div>
+
+      <!-- Member 4 -->
+      <div class="team-card">
+        <div class="team-image">N</div>
+        <h3>Nasiba</h3>
+        <p>Created styling improvements and enhanced the visual design consistency.</p>
+      </div>
+
+      <!-- Member 5 -->
+      <div class="team-card">
+        <div class="team-image">Z</div>
+        <h3>Ziya</h3>
+        <p>Handled footer structure, testing, and merge conflict resolution during collaboration.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+  
+  <!-- Student 4: Projects Section will go here -->
+   <section id="projects" class="projects-section">
+    <div class="container">
+      <h2>Our Projects</h2>
+      <p class="section-subtitle">Exploring the work of Turkan, Ferid, Celal, Nasiba, and Ziya.</p>
+      
+      <div class="projects-grid" id="projects-container">
+        <!-- Project Card 1: Python Data Scraper -->
+        <div class="project-card">
+          <div class="project-image">
+            <div class="placeholder-img">Python Project</div>
+          </div>
+          <div class="project-info">
+            <h3>Python Data Scraper</h3>
+            <p>A specialized tool designed to extract and process web data efficiently using Python's latest libraries.</p>
+            <a href="#" class="btn-project">View Project</a>
+          </div>
+        </div>
+
+        <!-- Project Card 2: E-commerce Platform -->
+        <div class="project-card">
+          <div class="project-image">
+            <div class="placeholder-img">Web App</div>
+          </div>
+          <div class="project-info">
+            <h3>E-commerce Platform</h3>
+            <p>A full-stack e-commerce solution with dynamic product listings and a seamless user interface.</p>
+            <a href="#" class="btn-project">View Project</a>
+          </div>
+        </div>
+
+        <!-- Project Card 3: Smart City API -->
+        <div class="project-card">
+          <div class="project-image">
+            <div class="placeholder-img">API Project</div>
+          </div>
+          <div class="project-info">
+            <h3>Smart City API</h3>
+            <p>A robust API built to manage city data infrastructure, focusing on speed and error handling.</p>
+            <a href="#" class="btn-project">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Student 5: Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    
+    <div class="contact-info">
+      <p>We'd love to hear from you! Please reach out to us at:</p>
+      <!-- Email link integrated here -->
+      <a href="mailto:hello@teamportfolio.com" class="email-link">hello@teamportfolio.com</a>
+    </div>
+
+    <!-- Contact Form Element -->
+    <form class="contact-form" action="#" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required placeholder="Type your message..."></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Student 4: Footer will go here -->
+   <!-- Student 4: Final Footer -->
+  <footer id="footer" class="footer-section">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>Team Portfolio</h3>
+        <p>Built with by Turkan, Ferid, Celal, Nasiba, and Ziya.</p>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Our Work</h4>
+        <div class="social-icons">
+          <a href="#" title="GitHub">GitHub</a>
+          <a href="#" title="LinkedIn">LinkedIn</a>
+          <a href="#" title="Twitter">Twitter</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Holberton SchoolIT Freshmen Project. All Rights Reserved.</p>
+    </div>
+  </footer>
+   
+
+  <script src="app.js"></script>
+</body>
+</html>

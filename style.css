@@ -1,0 +1,315 @@
+:root {
+  /* Global Colors */
+  --primary-color: #0056b3;
+  --secondary-color: #6c757d;
+  --accent-color: #17a2b8;
+  --background-light: #f8f9fa;
+  --text-dark: #333333;
+  --text-light: #ffffff;
+  --border-color: #dee2e6;
+
+  /* Global Fonts */
+  --font-primary: 'Helvetica Neue', Arial, sans-serif;
+  --font-secondary: 'Georgia', serif;
+
+  /* Global Spacing Variables */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+  --spacing-xl: 64px;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--text-dark);
+  background-color: var(--background-light);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-secondary);
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+/* Contact Section Styles */
+#contact {
+  padding: var(--spacing-xl) var(--spacing-md);
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--text-light);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.contact-info {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-family: var(--font-primary);
+}
+
+.contact-form button {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  align-self: center;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent-color);
+}
+
+/* =========================================
+   STUDENT 2: ABOUT SECTION & FOOTER STYLES
+   ========================================= */
+
+/* About Section */
+.about-section {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9; /* Student 5 might update this to a var() */
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.mission, .history {
+    max-width: 400px;
+    text-align: left;
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.social-links {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: #3498db;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+/* =========================
+   Navbar Styling
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: #111827;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #f3f4f6;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #60a5fa;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+/* =========================
+   Team Members Section
+========================= */
+
+.team-section {
+  padding: 80px 20px;
+  background-color: #f9fafb;
+  text-align: center;
+}
+
+.team-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-section h2 {
+  font-size: 2.5rem;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.team-subtitle {
+  color: #6b7280;
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+
+/* Team Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+/* Team Card */
+.team-card {
+  background-color: #ffffff;
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Circle Initial */
+.team-image {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto 20px;
+
+  border-radius: 50%;
+  background-color: #2563eb;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Member Name */
+.team-card h3 {
+  font-size: 1.4rem;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+/* Contribution Text */
+.team-card p {
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .team-section {
+    padding: 60px 15px;
+  }
+
+  .team-section h2 {
+    font-size: 2rem;
+  }
+
+  .team-subtitle {
+    font-size: 0.95rem;
+  }
+}
