@@ -1,0 +1,21 @@
+# Runs the OCR microservice only.
+# Run Next.js separately: cd quiz-app && npm run dev
+#
+# Dev usage:
+#   docker compose up -d          # OCR on localhost:5001
+#   cd quiz-app && npm run dev    # Next.js on localhost:3000
+#   OCR_SERVICE_URL=http://localhost:5001 (from .env.local)
+#
+# When running Next.js inside Docker (future):
+#   OCR_SERVICE_URL=http://ocr:80
+
+services:
+  ocr:
+    build: ./ocr-service
+    ports:
+      - "5001:80"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5

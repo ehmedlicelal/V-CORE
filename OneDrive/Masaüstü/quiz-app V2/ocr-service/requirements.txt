@@ -1,0 +1,6 @@
+# versions co-tested — upgrade together to avoid FastAPI/multipart field-name breakage
+fastapi==0.115.0
+uvicorn==0.30.6
+pytesseract==0.3.13
+Pillow==10.4.0
+python-multipart==0.0.12
