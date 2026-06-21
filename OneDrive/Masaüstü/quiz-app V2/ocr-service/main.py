@@ -20,11 +20,11 @@ async def ocr(image: UploadFile, page: int = Form(...)):
         img_bytes = await image.read()
         print(f"[ocr] received {len(img_bytes)} bytes for page {page}", file=sys.stderr)
         img = Image.open(io.BytesIO(img_bytes))
-        # PSM 6: assume a single uniform block of text (works well for quiz sheets).
-        # Switch to --psm 3 (auto) if sheets have complex two-column layouts.
+        # PSM 3: fully automatic page segmentation — handles both single-column
+        # and two-column exam layouts correctly. PSM 6 was mixing columns.
         data = pytesseract.image_to_data(
             img,
-            config="--psm 6",
+            config="--psm 3",
             output_type=pytesseract.Output.DICT,
         )
         fragments = []
